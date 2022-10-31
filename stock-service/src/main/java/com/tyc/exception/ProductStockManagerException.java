@@ -3,14 +3,14 @@ package com.tyc.exception;
 import lombok.Getter;
 
 @Getter
-public class ProductManagerException extends RuntimeException {
+public class ProductStockManagerException extends RuntimeException {
     private final ErrorType errorType;
-    public ProductManagerException(ErrorType errorType) {
+    public ProductStockManagerException(ErrorType errorType) {
         super(errorType.getMessage());
         this.errorType = errorType;
     }
 
-    public ProductManagerException(ErrorType errorType, String message) {
+    public ProductStockManagerException(ErrorType errorType, String message) {
         super(message);
         this.errorType = errorType;
     }

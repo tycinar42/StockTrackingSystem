@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class UpdateProductRequestDto {
+public class UpdateProductStockRequestDto {
     @NotNull(message = "Id must not be null")
-    private Long id;
+    private Long productId;
     @NotNull(message = "Brand must not be null")
     private String brand;
     @NotNull(message = "Model must not be null")

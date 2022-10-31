@@ -1,2 +1,4 @@
 rootProject.name = 'StockTrackingSystem'
+include 'product-service'
+include 'stock-service'
 

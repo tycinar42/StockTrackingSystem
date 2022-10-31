@@ -3,7 +3,7 @@ package com.tyc.constant;
 public class ApiUrl {
     public static final String VERSION = "/api/v.0.1";
     public static final String PRODUCT = VERSION + "/product";
-    public static final String USER = VERSION + "/user";
+    public static final String PRODUCTSTOCK = VERSION + "/productstock";
 
     public static final String DOLOGIN = "/dologin";
     public static final String REGISTER = "/register";
@@ -14,7 +14,7 @@ public class ApiUrl {
     public static final String UPDATE = "/update";
     public static final String DELETE = "/delete";
     public static final String GETALL = "/findall";
-    public static final String GETALLBYROLE = "/findallbyrole";
+    public static final String GETALLBYMODELCONTAINING = "/findallbymodelcontaining";
 
 
 }

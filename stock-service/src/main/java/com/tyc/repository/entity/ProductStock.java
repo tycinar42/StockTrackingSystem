@@ -7,16 +7,17 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Table(name = "tblproduct")
+@Table(name = "tblproductstock")
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class Product {
+public class ProductStock {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Long productId;
     private String brand;
     private String model;
     private String name;

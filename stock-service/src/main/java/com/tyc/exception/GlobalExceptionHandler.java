@@ -54,7 +54,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public final ResponseEntity<ErrorMessage> handlePSQLException(
             DataIntegrityViolationException ex) {
-        ErrorType errorType = PRODUCT_ALREADY_EXISTS;
+        ErrorType errorType = PRODUCTSTOCK_ALREADY_EXISTS;
         return new ResponseEntity<>(createError(errorType, ex), errorType.getHttpStatus());
     }
 
